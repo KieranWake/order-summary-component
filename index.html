@@ -38,32 +38,41 @@
       padding: 0; 
     }
 
+    .card-container {
+      display: inline-block;
+      position: relative; 
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 75px;
+      width: 30%;
+      border-radius: 600px;
+    }
+
+    .image-one {
+      width: 95%;
+    }
+
     
     
   </style>
 </head>
 <body>
- <main class="background">
-  <img src="images/pattern-background-desktop.svg">
-   <div class="card-container">
-     <div class="top-image">
-       <img src="images/illustration-hero.svg">
-     </div>
-     <div class="content-summary">
-       <h3>Order Summary</h3>
-       <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-     </div>
-     <div class="content-price">
-       <img src="images/icon-music.svg"> 
-       <strong>Annual Plan</strong> 
-       <p>$59.99/year</p>
-       <a href="">Change</a>
-     </div>
-     <div class="content-buttons">
-       <button>Proceed to Payment</button>
-       <button>Cancel Order</button>
-     </div>
-   </div>
+ <main class="card-container">
+  <div class="content-summary">
+    <img class="image-one" src="images/illustration-hero.svg">
+    <h3>Order Summary</h3>
+    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+  </div>
+  <div class="content-price">
+    <img src="images/icon-music.svg"> 
+    <strong>Annual Plan</strong> 
+    <p>$59.99/year</p>
+    <a href="">Change</a>
+    </div>
+  <div class="content-buttons">
+    <button>Proceed to Payment</button>
+    <button>Cancel Order</button>
+  </div>
  </main>
 </body>
 </html>

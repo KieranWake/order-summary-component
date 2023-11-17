@@ -38,17 +38,27 @@
       padding: 0; 
     }
 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+      margin: 0;
+      background-image: url('images/pattern-background-desktop.svg');
+    }
+
     .card-container {
-      position: relative; 
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 75px;
-      width: 30%;
-      border-radius: 600px;
+      width: 20rem;
+      height: 80vh;
+      border: 2px solid black;
+      background-color: #fff;
+      border-radius: 20px;
+      text-align: center;
     }
 
     .image-one {
-      width: 95%;
+      width: 100%;
+      border-radius: 20px;
     }
 
     
@@ -56,22 +66,22 @@
   </style>
 </head>
 <body>
- <main class="card-container">
-  <div class="content-summary">
-    <img class="image-one" src="images/illustration-hero.svg">
-    <h3>Order Summary</h3>
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
-  </div>
-  <div class="content-price">
-    <img src="images/icon-music.svg"> 
-    <strong>Annual Plan</strong> 
-    <p>$59.99/year</p>
-    <a href="">Change</a>
+  <main class="card-container">
+    <div class="content-summary">
+      <img class="image-one" src="images/illustration-hero.svg" alt="Illustration of a person with headphones listening to music, audiobooks, and podcasts">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
     </div>
-  <div class="content-buttons">
-    <button>Proceed to Payment</button>
-    <button>Cancel Order</button>
-  </div>
- </main>
+    <div class="content-price">
+      <img src="images/icon-music.svg" alt="Music icon">
+      <strong>Annual Plan</strong>
+      <p>$59.99/year</p>
+      <a href="#">Change</a>
+    </div>
+    <div class="content-buttons">
+      <button>Proceed to Payment</button>
+      <button>Cancel Order</button>
+    </div>
+  </main>
 </body>
 </html>

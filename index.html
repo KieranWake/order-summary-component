@@ -51,7 +51,7 @@
 
     .card-container {
       width: 20rem;
-      height: 80vh;
+      height: 85vh;
       border-radius: 20px;
       background-color: #fff;
       text-align: center;
@@ -108,14 +108,42 @@
       font-family: 'RedHatDisplay-ExtraBold';
     }
 
+    .content-buttons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    button:nth-child(1) {
+      margin: 10px;
+      padding: 10px;
+      width: 18rem;
+      border-style: none;
+      border-radius: 10px;
+      background-color: hsl(245, 75%, 52%);
+      color: #fff;
+      font-family: 'RedHatDisplay-ExtraBold'; 
+      cursor: pointer;
+      transition: 2s;
+    }
+
+    button:nth-child(1):hover {
+      box-shadow: 0 0 20px hsl(245, 75%, 52%), 0 0 40px hsl(245, 75%, 52%), 0 0 60px hsl(245, 75%, 52%), 0 0 80px;
+
+    }
+
+    button:nth-child(2) {
+      margin: 5px;
+      margin-bottom: 10px;
+      padding: 10px;
+      width: 18rem;
+      border-radius: 10px;
+      border-style: none;
+      font-family: 'RedHatDisplay-ExtraBold';
+      cursor: pointer; 
+    }
 
 
-    
-
-
-
-    
-    
   </style>
 </head>
 <body>
